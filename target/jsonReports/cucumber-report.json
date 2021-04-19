@@ -1,0 +1,189 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-19T05:16:01.872Z",
+        "line": 12,
+        "name": "Add the podcast",
+        "description": "",
+        "id": "validating-listen-api;add-the-podcast;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2767000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add  podcast with \"3141672a2\" \"new\" 73",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3141672a2\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"new\"",
+                  "offset": 30
+                },
+                {
+                  "val": "73",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinations.stepDefinations.add_podcast(java.lang.String,java.lang.String,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 904000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Use \"post\" method to \"ADDpodcast\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"post\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"ADDpodcast\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinations.stepDefinations.use_method_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "assert the data with status code 100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinations.stepDefinations.assert_the_data(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 477000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "assert \"status\" in response body is \"in review\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"in review\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinations.stepDefinations.assert_in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 127000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "use Get method to display the podacst \"3141672a2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3141672a2\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinations.stepDefinations.use_method_to_display_the_podacst(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-19T05:16:01.866Z",
+        "line": 14,
+        "name": "run Ui test",
+        "description": "",
+        "id": "validating-listen-api;run-ui-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3178000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "open Url",
+            "match": {
+              "location": "stepDefinations.stepDefinations.open_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 214000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "enter test in search bar",
+            "match": {
+              "location": "stepDefinations.stepDefinations.enter_test_in_search_bar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "press click button to get results",
+            "match": {
+              "location": "stepDefinations.stepDefinations.press_click_button_to_get_results()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 710000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "close browser",
+            "match": {
+              "location": "stepDefinations.stepDefinations.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating Listen API",
+    "description": "",
+    "id": "validating-listen-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Apitempltae.feature",
+    "tags": []
+  }
+]

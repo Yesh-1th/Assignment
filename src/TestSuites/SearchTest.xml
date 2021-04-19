@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="onesearch" verbose="1" parallel="tests" thread-count="3" >
+
+<listeners>
+    <listener class-name="Report.Listeners"> </listener>
+</listeners>
+
+    <test name="search-onesearch-ff">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="testcases.searchTest" />
+        </classes>
+    </test>
+
+    <test name="search-onesearch-chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="testcases.searchTest" />
+        </classes>
+    </test>
+
+    <test name="search-onesearch-edge">
+        <parameter name="browser" value="ie"></parameter>
+        <classes>
+            <class name="testcases.searchTest" />
+        </classes>
+    </test>
+
+    <test name="cucumbertest">
+        <classes>
+            <class name="tests.testRunner" />
+        </classes>
+    </test>
+</suite>

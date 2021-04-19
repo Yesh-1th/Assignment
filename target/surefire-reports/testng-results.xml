@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="5513" started-at="2021-04-18T18:55:10 AEST" finished-at="2021-04-18T18:55:16 AEST">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="5513" started-at="2021-04-18T18:55:10 AEST" finished-at="2021-04-18T18:55:16 AEST">
+      <class name="testcases.searchTest">
+        <test-method status="PASS" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:testcases.searchTest@396f6598]" name="setUp" is-config="true" duration-ms="2126" started-at="2021-04-18T18:55:10 AEST" finished-at="2021-04-18T18:55:12 AEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1817f1eb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="search()[pri:0, instance:testcases.searchTest@396f6598]" name="search" duration-ms="2719" started-at="2021-04-18T18:55:12 AEST" finished-at="2021-04-18T18:55:15 AEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.searchTest@396f6598]" name="tearDown" is-config="true" duration-ms="639" started-at="2021-04-18T18:55:15 AEST" finished-at="2021-04-18T18:55:16 AEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.searchTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
