@@ -31,8 +31,8 @@ public class stepDefinations extends Utils {
     String browser = "chrome";
 
     TestDatabuild data = new TestDatabuild();
-    browser br = new browser(browser);
-    WebDriver drive = br.createDriver();
+    baseTest bt = new baseTest();
+    WebDriver drive = bt.setUp(browser);
     searchPage sp= new searchPage(drive);
 
 
@@ -40,8 +40,6 @@ public class stepDefinations extends Utils {
     @Given("Add  podcast with {string} {string} {int}")
     public void add_podcast(String id,String image,int listen_score) throws IOException {
         res = given().spec(requestSpecification()).body(data.addPodcastPayLoad(id,image,listen_score));
-//                .when().
-//                post("https://listen-api-test.listennotes.com/api/v2/podcasts/submit").then().log().status().assertThat().statusCode(200);
 
     }
 
@@ -72,21 +70,11 @@ public void use_method_to(String method, String resource) {
     @Then("use Get method to display the podacst {string}")
     public void use_method_to_display_the_podacst(String id) {
         APIResources Ar =  APIResources.valueOf("GETpodcast");
-        System.out.println(Ar.getResource());
         response =given().queryParam("id",id).spec(req).when().get(Ar.getResource());
 
 
-        //APIResources Ar =  APIResources.valueOf(resource);
-        //response =res.when().get(Ar.getResource());
-
-        // response = res.when().get(ar.getResource());
-//        given().queryParam("7282672782").when().
-//                get("https://listen-api-test.listennotes.com/api/v2/podcasts/")
-//                .then().assertThat()
-//                .header("x-listenapi-plan","FREE");
-
-
     }
+
 
     @Given("open Url")
     public void open_url() {

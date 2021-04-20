@@ -14,8 +14,6 @@ public class browser {
 
     public browser(String broswer) {
         this.browser = broswer;
-
-
     }
 
     public WebDriver createDriver() {
@@ -30,7 +28,7 @@ public class browser {
                      driver.set(new FirefoxDriver());
 
                     break;
-            case "ie":
+            case "edge":
                     System.setProperty("webdriver.edge.driver","C:\\Work\\software for Selenium\\edgedriver_win64 (1)\\msedgedriver.exe");
                     driver.set(new EdgeDriver());
                     break;

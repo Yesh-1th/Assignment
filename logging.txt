@@ -21,21 +21,21 @@ Body:
     "listen_score_global_rank": 9.0
 }
 HTTP/1.1 200 OK
-Date: Mon, 19 Apr 2021 05:16:05 GMT
+Date: Tue, 20 Apr 2021 04:59:18 GMT
 Content-Type: application/json
 Content-Length: 22
 Connection: keep-alive
-Set-Cookie: __cfduid=d36b23e9722337ca64eb0f02cb269aaf31618809365; expires=Wed, 19-May-21 05:16:05 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
+Set-Cookie: __cfduid=d73fd219ade8c989b5592991196e0af6d1618894758; expires=Thu, 20-May-21 04:59:18 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
 x-listenapi-freequota: 2500
 x-listenapi-latency-seconds: 0.06106686592102051
 x-listenapi-nextbillingdate: 2021-02-14T18:53:16.385542+00:00
 x-listenapi-plan: FREE
 x-listenapi-usage: 1024
-cf-request-id: 098a27bb9e0000df95f407b000000001
+cf-request-id: 098f3eb9290000fe99128d9000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 6423a8a5cbfedf95-MEL
+CF-RAY: 642bcd6eaad2fe99-MEL
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
@@ -54,21 +54,21 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Mon, 19 Apr 2021 05:16:06 GMT
+Date: Tue, 20 Apr 2021 04:59:18 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d416494a761ce10e404c5589ae33c12521618809366; expires=Wed, 19-May-21 05:16:06 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
+Set-Cookie: __cfduid=d451ce6355606f97cb78ad5a81d90ea1f1618894758; expires=Thu, 20-May-21 04:59:18 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
 x-listenapi-freequota: 2500
 x-listenapi-latency-seconds: 0.06106686592102051
 x-listenapi-nextbillingdate: 2021-02-14T18:53:16.385542+00:00
 x-listenapi-plan: FREE
 x-listenapi-usage: 1024
-cf-request-id: 098a27be79000017d06089f000000001
+cf-request-id: 098f3ebbe900003774af1c0000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 6423a8aa590e17d0-MEL
+CF-RAY: 642bcd730f003774-MEL
 Content-Encoding: gzip
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 

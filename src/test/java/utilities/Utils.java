@@ -1,20 +1,14 @@
 package utilities;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.openqa.selenium.WebDriver;
-import org.testng.ITestContext;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import testcases.baseTest;
+import io.restassured.specification.ResponseSpecification;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -24,8 +18,8 @@ import java.util.Properties;
 
 public class Utils {
 
-    public  RequestSpecification req;//get rid of static
-    WebDriver driver;
+    public  RequestSpecification req;
+    public ResponseSpecification respon;
 
     public RequestSpecification requestSpecification() throws IOException
     {
@@ -43,6 +37,14 @@ public class Utils {
 
 
     }
+
+    public ResponseSpecification responseSpecification()
+    {
+        respon = new ResponseSpecBuilder().expectStatusCode(200).build();
+
+        return respon;
+        }
+
 
 
     public static String getGlobalValue(String key) throws IOException

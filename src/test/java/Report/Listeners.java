@@ -9,27 +9,28 @@ import org.testng.ITestResult;
 
 public class Listeners implements ITestListener {
 
-    private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
+    public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
     ExtentReports extent = ReportConfig.config();
     ExtentTest test;
+
 
 
     @Override
     public void onTestStart(ITestResult result) {
         test = extent.createTest(result.getMethod().getMethodName());//dynamically get the test name at the start of the test
         extentTest.set(test);
+        test.assignCategory(result.getTestClass().getXmlTest().getName());
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
+
         extentTest.get().log(Status.PASS,"Successful");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         extentTest.get().fail(result.getThrowable());
-        //take screenshot on failure
-       // extentTest.get().addScreenCaptureFromPath(getScreenhotPath(),result.getMethod().getMethodName());
 
     }
 

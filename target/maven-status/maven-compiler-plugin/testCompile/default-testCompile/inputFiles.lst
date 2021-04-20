@@ -4,6 +4,8 @@ C:\Work\Assignment\src\test\java\Report\Listeners.java
 C:\Work\Assignment\src\test\java\pageobjects\searchPage.java
 C:\Work\Assignment\src\test\java\Report\getScreenhotPath.java
 C:\Work\Assignment\src\test\java\utilities\TestDatabuild.java
+C:\Work\Assignment\src\test\java\tests\testRunner.java
+C:\Work\Assignment\src\test\java\tests\testRunnerwithTestng.java
 C:\Work\Assignment\src\test\java\testcases\searchTest.java
 C:\Work\Assignment\src\test\java\utilities\APIResources.java
 C:\Work\Assignment\src\test\java\testcases\baseTest.java
@@ -11,4 +13,3 @@ C:\Work\Assignment\src\test\java\org\example\AppTest.java
 C:\Work\Assignment\src\test\java\utilities\browser.java
 C:\Work\Assignment\src\test\java\Report\ReportConfig.java
 C:\Work\Assignment\src\test\java\utilities\Utils.java
-C:\Work\Assignment\src\test\java\options\testRunner.java

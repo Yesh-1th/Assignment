@@ -3,9 +3,9 @@ Feature: Validating Listen API
   Scenario Outline:Add the podcast
     Given Add  podcast with "<id>" "<image>" <listen_score>
     When Use "post" method to "ADDpodcast"
-    Then assert the data with status code 100
+    Then assert the data with status code 200
     Then assert "status" in response body is "in review"
-    Then use Get method to display the podacst "3141672a2"
+    Then use Get method to display the podacst "<id>"
 
     Examples:
     |id|image|listen_score|

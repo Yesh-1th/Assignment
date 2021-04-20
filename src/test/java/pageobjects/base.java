@@ -41,6 +41,12 @@ public class base {
         find(locator).click();
     }
 
+    /** Get URL of current page from browser */
+    public String getCurrentUrl() {
+
+        return driver.getCurrentUrl();
+    }
+
     //waiting logic
 
     /**

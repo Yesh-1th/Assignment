@@ -1,13 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="5513" started-at="2021-04-18T18:55:10 AEST" finished-at="2021-04-18T18:55:16 AEST">
+  <suite name="Surefire suite" duration-ms="15603" started-at="2021-04-20T08:40:20 AEST" finished-at="2021-04-20T08:40:36 AEST">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.TestngTest@2bbf4b8b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="5513" started-at="2021-04-18T18:55:10 AEST" finished-at="2021-04-18T18:55:16 AEST">
+    <test name="Surefire test" duration-ms="15603" started-at="2021-04-20T08:40:20 AEST" finished-at="2021-04-20T08:40:36 AEST">
+      <class name="tests.TestngTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.TestngTest@2bbf4b8b]" name="setUpClass" is-config="true" duration-ms="496" started-at="2021-04-20T08:40:28 AEST" finished-at="2021-04-20T08:40:29 AEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.TestngTest@2bbf4b8b]" name="runScenario" duration-ms="5553" started-at="2021-04-20T08:40:29 AEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-20T08:40:35 AEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["run Ui test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validating Listen API]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.TestngTest@2bbf4b8b]" name="runScenario" duration-ms="6872" started-at="2021-04-20T08:40:29 AEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-20T08:40:36 AEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add the podcast"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Validating Listen API]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.TestngTest@2bbf4b8b]" name="tearDownClass" is-config="true" duration-ms="72" started-at="2021-04-20T08:40:36 AEST" finished-at="2021-04-20T08:40:36 AEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.TestngTest -->
       <class name="testcases.searchTest">
-        <test-method status="PASS" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:testcases.searchTest@396f6598]" name="setUp" is-config="true" duration-ms="2126" started-at="2021-04-18T18:55:10 AEST" finished-at="2021-04-18T18:55:12 AEST">
+        <test-method status="PASS" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:testcases.searchTest@ea1a8d5]" name="setUp" is-config="true" duration-ms="2741" started-at="2021-04-20T08:40:20 AEST" finished-at="2021-04-20T08:40:23 AEST">
           <params>
             <param index="0">
               <value>
@@ -16,18 +61,18 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@1817f1eb]]>
+                <![CDATA[org.testng.TestRunner@183e8023]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="search()[pri:0, instance:testcases.searchTest@396f6598]" name="search" duration-ms="2719" started-at="2021-04-18T18:55:12 AEST" finished-at="2021-04-18T18:55:15 AEST">
+        <test-method status="PASS" signature="search()[pri:0, instance:testcases.searchTest@ea1a8d5]" name="search" duration-ms="4154" started-at="2021-04-20T08:40:23 AEST" finished-at="2021-04-20T08:40:27 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.searchTest@396f6598]" name="tearDown" is-config="true" duration-ms="639" started-at="2021-04-18T18:55:15 AEST" finished-at="2021-04-18T18:55:16 AEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.searchTest@ea1a8d5]" name="tearDown" is-config="true" duration-ms="1212" started-at="2021-04-20T08:40:27 AEST" finished-at="2021-04-20T08:40:28 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

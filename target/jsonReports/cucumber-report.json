@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-19T05:16:01.872Z",
+        "start_timestamp": "2021-04-20T04:59:14.679Z",
         "line": 12,
         "name": "Add the podcast",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2767000000,
+              "duration": 2776000000,
               "status": "passed"
             },
             "line": 4,
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 904000000,
+              "duration": 826000000,
               "status": "passed"
             },
             "line": 5,
@@ -61,15 +61,15 @@
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "assert the data with status code 100",
+            "name": "assert the data with status code 200",
             "match": {
               "arguments": [
                 {
-                  "val": "100",
+                  "val": "200",
                   "offset": 33
                 }
               ],
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 477000000,
+              "duration": 483000000,
               "status": "passed"
             },
             "line": 7,
@@ -101,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 127000000,
+              "duration": 198000000,
               "status": "passed"
             },
             "line": 8,
@@ -120,7 +120,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-04-19T05:16:01.866Z",
+        "start_timestamp": "2021-04-20T04:59:14.673Z",
         "line": 14,
         "name": "run Ui test",
         "description": "",
@@ -130,7 +130,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3178000000,
+              "duration": 3102000000,
               "status": "passed"
             },
             "line": 15,
@@ -142,7 +142,7 @@
           },
           {
             "result": {
-              "duration": 214000000,
+              "duration": 209000000,
               "status": "passed"
             },
             "line": 16,
@@ -154,7 +154,7 @@
           },
           {
             "result": {
-              "duration": 104000000,
+              "duration": 948000000,
               "status": "passed"
             },
             "line": 17,
@@ -166,7 +166,7 @@
           },
           {
             "result": {
-              "duration": 710000000,
+              "duration": 632000000,
               "status": "passed"
             },
             "line": 18,

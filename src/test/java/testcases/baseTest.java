@@ -20,9 +20,7 @@ public class baseTest {
 
     @Parameters({"browser" })
     @BeforeMethod(alwaysRun = true)
-    public WebDriver setUp(@Optional("chrome") String browser,ITestContext ctx) {
-
-        String testName = ctx.getCurrentXmlTest().getName();
+    public WebDriver setUp(@Optional("chrome") String browser) {
 
         browser br = new browser(browser);
         driver = br.createDriver();
@@ -40,8 +38,7 @@ public class baseTest {
 
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
-        //log.info("Close driver");
-        // Close the browser
+
         driver.quit();
     }
 

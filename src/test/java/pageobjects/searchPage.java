@@ -1,12 +1,9 @@
 package pageobjects;
 
 
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Test;
-import testcases.baseTest;
-import utilities.browser;
+
 
 
 public class searchPage extends base{
