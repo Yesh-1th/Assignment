@@ -10,27 +10,27 @@ import org.testng.ITestResult;
 public class Listeners implements ITestListener {
 
     public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
-    ExtentReports extent = ReportConfig.config();
+    //ExtentReports extent = ReportConfig.config();
     ExtentTest test;
 
 
 
     @Override
     public void onTestStart(ITestResult result) {
-        test = extent.createTest(result.getMethod().getMethodName());//dynamically get the test name at the start of the test
-        extentTest.set(test);
-        test.assignCategory(result.getTestClass().getXmlTest().getName());
+//        test = extent.createTest(result.getMethod().getMethodName());//dynamically get the test name at the start of the test
+//        extentTest.set(test);
+//        test.assignCategory(result.getTestClass().getXmlTest().getName());
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
 
-        extentTest.get().log(Status.PASS,"Successful");
+//        extentTest.get().log(Status.PASS,"Successful");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        extentTest.get().fail(result.getThrowable());
+//        extentTest.get().fail(result.getThrowable());
 
     }
 
@@ -51,13 +51,15 @@ public class Listeners implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
+        //ReportConfig.config();
+
 
     }
 
     @Override
     public void onFinish(ITestContext context) {
 
-     extent.flush();
+     //ReportConfig.extent.flush();
 
 
     }

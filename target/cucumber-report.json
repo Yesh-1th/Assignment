@@ -3,17 +3,39 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-21T11:08:43.938Z",
+        "start_timestamp": "2021-04-22T05:27:20.474Z",
+        "before": [
+          {
+            "result": {
+              "duration": 127000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.init()"
+            }
+          }
+        ],
         "line": 12,
         "name": "Add the podcast",
         "description": "",
         "id": "validating-listen-api;add-the-podcast;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 336000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.close()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3030000000,
+              "duration": 3084000000,
               "status": "passed"
             },
             "line": 4,
@@ -39,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 911000000,
+              "duration": 814000000,
               "status": "passed"
             },
             "line": 5,
@@ -79,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 473000000,
+              "duration": 480000000,
               "status": "passed"
             },
             "line": 7,
@@ -101,7 +123,7 @@
           },
           {
             "result": {
-              "duration": 195000000,
+              "duration": 188000000,
               "status": "passed"
             },
             "line": 8,
@@ -120,17 +142,39 @@
         ]
       },
       {
-        "start_timestamp": "2021-04-21T11:08:43.932Z",
+        "start_timestamp": "2021-04-22T05:27:20.469Z",
+        "before": [
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.init()"
+            }
+          }
+        ],
         "line": 14,
         "name": "run Ui test",
         "description": "",
         "id": "validating-listen-api;run-ui-test",
+        "after": [
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.close()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3383000000,
+              "duration": 3413000000,
               "status": "passed"
             },
             "line": 15,
@@ -142,7 +186,7 @@
           },
           {
             "result": {
-              "duration": 148000000,
+              "duration": 162000000,
               "status": "passed"
             },
             "line": 16,
@@ -154,7 +198,7 @@
           },
           {
             "result": {
-              "duration": 976000000,
+              "duration": 1139000000,
               "status": "passed"
             },
             "line": 17,
@@ -166,7 +210,7 @@
           },
           {
             "result": {
-              "duration": 742000000,
+              "duration": 661000000,
               "status": "passed"
             },
             "line": 18,

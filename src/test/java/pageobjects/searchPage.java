@@ -1,6 +1,4 @@
 package pageobjects;
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -23,7 +21,6 @@ public class searchPage extends base{
     }
 
     public  void performSearch(String search_text){
-        //log.info("Searching for results on "+search_text);
         type(search_text,searchbar);
 
     }

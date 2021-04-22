@@ -11,31 +11,31 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": "3141672a2",
     "image": "new",
-    "title": "None",
-    "publisher": "dummy",
     "thumbnail": "white",
-    "listen_score": 73,
-    "listennotes_url": "Dummy",
-    "listen_score_global_rank": 9.0
+    "listen_score_global_rank": "9",
+    "listen_score": "78",
+    "publisher": "dummy",
+    "id": "5aghajuy5",
+    "title": "nonw",
+    "listennotes_url": "none"
 }
 HTTP/1.1 200 OK
-Date: Tue, 20 Apr 2021 04:59:18 GMT
+Date: Thu, 22 Apr 2021 05:27:24 GMT
 Content-Type: application/json
 Content-Length: 22
 Connection: keep-alive
-Set-Cookie: __cfduid=d73fd219ade8c989b5592991196e0af6d1618894758; expires=Thu, 20-May-21 04:59:18 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
+Set-Cookie: __cfduid=d56a3b665754f8caff455f7f021fee99e1619069244; expires=Sat, 22-May-21 05:27:24 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
 x-listenapi-freequota: 2500
 x-listenapi-latency-seconds: 0.06106686592102051
 x-listenapi-nextbillingdate: 2021-02-14T18:53:16.385542+00:00
 x-listenapi-plan: FREE
 x-listenapi-usage: 1024
-cf-request-id: 098f3eb9290000fe99128d9000000001
+cf-request-id: 0999a52bfa0000df9d62b6c000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 642bcd6eaad2fe99-MEL
+CF-RAY: 643c71598c74df9d-MEL
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
@@ -54,21 +54,21 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Tue, 20 Apr 2021 04:59:18 GMT
+Date: Thu, 22 Apr 2021 05:27:25 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d451ce6355606f97cb78ad5a81d90ea1f1618894758; expires=Thu, 20-May-21 04:59:18 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
+Set-Cookie: __cfduid=d8ff421e80c7671cbb83dc5dee6bfe2ee1619069245; expires=Sat, 22-May-21 05:27:25 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
 x-listenapi-freequota: 2500
 x-listenapi-latency-seconds: 0.06106686592102051
 x-listenapi-nextbillingdate: 2021-02-14T18:53:16.385542+00:00
 x-listenapi-plan: FREE
 x-listenapi-usage: 1024
-cf-request-id: 098f3ebbe900003774af1c0000000001
+cf-request-id: 0999a52ea50000377540276000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 642bcd730f003774-MEL
+CF-RAY: 643c715ddc203775-MEL
 Content-Encoding: gzip
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
