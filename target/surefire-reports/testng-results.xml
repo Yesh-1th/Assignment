@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="15603" started-at="2021-04-20T08:40:20 AEST" finished-at="2021-04-20T08:40:36 AEST">
+  <suite name="Surefire suite" duration-ms="6062" started-at="2021-04-23T13:40:14 AEST" finished-at="2021-04-23T13:40:20 AEST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.TestngTest@2bbf4b8b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.TestngTest@3d921e20]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="15603" started-at="2021-04-20T08:40:20 AEST" finished-at="2021-04-20T08:40:36 AEST">
+    <test name="Surefire test" duration-ms="6062" started-at="2021-04-23T13:40:14 AEST" finished-at="2021-04-23T13:40:20 AEST">
       <class name="tests.TestngTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.TestngTest@2bbf4b8b]" name="setUpClass" is-config="true" duration-ms="496" started-at="2021-04-20T08:40:28 AEST" finished-at="2021-04-20T08:40:29 AEST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.TestngTest@3d921e20]" name="setUpClass" is-config="true" duration-ms="229" started-at="2021-04-23T13:40:14 AEST" finished-at="2021-04-23T13:40:14 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.TestngTest@2bbf4b8b]" name="runScenario" duration-ms="5553" started-at="2021-04-20T08:40:29 AEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-20T08:40:35 AEST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.TestngTest@3d921e20]" name="runScenario" duration-ms="5357" started-at="2021-04-23T13:40:14 AEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-23T13:40:19 AEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["run Ui test"]]>
+                <![CDATA["API test"]]>
               </value>
             </param>
             <param index="1">
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.TestngTest@2bbf4b8b]" name="runScenario" duration-ms="6872" started-at="2021-04-20T08:40:29 AEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-20T08:40:36 AEST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.TestngTest@3d921e20]" name="runScenario" duration-ms="5751" started-at="2021-04-23T13:40:14 AEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-23T13:40:20 AEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add the podcast"]]>
+                <![CDATA["UI test"]]>
               </value>
             </param>
             <param index="1">
@@ -46,37 +46,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.TestngTest@2bbf4b8b]" name="tearDownClass" is-config="true" duration-ms="72" started-at="2021-04-20T08:40:36 AEST" finished-at="2021-04-20T08:40:36 AEST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.TestngTest@3d921e20]" name="tearDownClass" is-config="true" duration-ms="55" started-at="2021-04-23T13:40:20 AEST" finished-at="2021-04-23T13:40:20 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- tests.TestngTest -->
-      <class name="testcases.searchTest">
-        <test-method status="PASS" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:testcases.searchTest@ea1a8d5]" name="setUp" is-config="true" duration-ms="2741" started-at="2021-04-20T08:40:20 AEST" finished-at="2021-04-20T08:40:23 AEST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@183e8023]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="search()[pri:0, instance:testcases.searchTest@ea1a8d5]" name="search" duration-ms="4154" started-at="2021-04-20T08:40:23 AEST" finished-at="2021-04-20T08:40:27 AEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.searchTest@ea1a8d5]" name="tearDown" is-config="true" duration-ms="1212" started-at="2021-04-20T08:40:27 AEST" finished-at="2021-04-20T08:40:28 AEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcases.searchTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

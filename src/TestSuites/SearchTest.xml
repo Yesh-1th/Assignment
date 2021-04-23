@@ -9,25 +9,25 @@
     <test name="search-onesearch-ff">
         <parameter name="browser" value="firefox"></parameter>
         <classes>
-            <class name="testcases.searchTest" />
+            <class name="testcases.searchTesting" />
         </classes>
     </test>
 
     <test name="search-onesearch-chrome">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="testcases.searchTest" />
+            <class name="testcases.searchTesting" />
         </classes>
     </test>
 
     <test name="search-onesearch-edge">
         <parameter name="browser" value="edge"></parameter>
         <classes>
-            <class name="testcases.searchTest" />
+            <class name="testcases.searchTesting" />
         </classes>
     </test>
 
-    <test name="cucumbertest">
+    <test name="Listen API test">
         <classes>
             <class name="tests.TestngTest" />
         </classes>

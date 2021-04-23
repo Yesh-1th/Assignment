@@ -1,4 +1,3 @@
-testcases\searchTest.class
 utilities\APIResources.class
 pageobjects\base.class
 pageobjects\searchPage.class

@@ -36,6 +36,8 @@
 //            for (ISuiteResult r : result.values()) {
 //                ITestContext context = r.getTestContext();
 //
+//
+//
 ////                buildTestNodes(context.getPassedTests(), Log.builder());
 ////                buildTestNodes(context.getPassedTests(),lo);
 ////                buildTestNodes(context.getFailedTests(), LogStatus.FAIL);

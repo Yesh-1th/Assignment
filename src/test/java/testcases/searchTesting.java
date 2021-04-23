@@ -12,21 +12,20 @@ import pageobjects.base;
 import pageobjects.searchPage;
 
 
-
-public class searchTest extends baseTest {
+@Test
+public class searchTesting extends baseTest {
    String url = "https://www.onesearch.com/";
    String text = "Ampion";
 
 
 
-
-    @Test
     public void search( )
 
 
     {
 //       ExtentTest test= ReportConfig.extent.createTest(result.getMethod().getMethodName() );
 //       test.assignCategory(result.getTestClass().getXmlTest().getName());
+
 
 
 

@@ -1,6 +1,6 @@
 Feature: Validating Listen API
 
-  Scenario Outline:Add the podcast
+  Scenario Outline:API test
     Given Add  podcast with "<id>" "<image>" <listen_score>
     When Use "post" method to "ADDpodcast"
     Then assert the data with status code 200
@@ -11,7 +11,7 @@ Feature: Validating Listen API
     |id|image|listen_score|
     |3141672a2|new| 73    |
 
-    Scenario: run Ui test
+    Scenario:UI test
       Given open Url
       When enter test in search bar
       Then press click button to get results

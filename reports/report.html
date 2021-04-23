@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 22, 2021 03:27:20 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 23, 2021 04:01:15 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,7 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,52 +74,66 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="skip" test-id="1"
           author=""
           tag=""
           device="">
-          <div class="status-avatar pass-bg">
-            <i class="fa fa-check text-white"></i>
+          <div class="status-avatar skip-bg">
+            <i class="fa fa-long-arrow-right text-white"></i>
           </div>
           <div class="test-detail">
             <span class="meta text-white badge badge-sm"></span>
-            <p class="name">API Post Test</p>
-            <p class="text-sm"><span>15:27:22 PM</span> / <span>0 secs</span></p>
+            <p class="name">search-onesearch-edge</p>
+            <p class="text-sm"><span>16:01:17 PM</span> / <span>0.004 secs</span></p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
 <div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
-<h5 class="test-status text-pass">API Post Test</h5>
-<span class='badge badge-success'>04.22.2021 15:27:22</span>
-<span class='badge badge-danger'>04.22.2021 15:27:22</span>
-<span class='badge badge-default'>0 secs</span>
+<h5 class="test-status text-skip">search-onesearch-edge</h5>
+<span class='badge badge-success'>04.23.2021 16:01:17</span>
+<span class='badge badge-danger'>04.23.2021 16:01:17</span>
+<span class='badge badge-default'>0.004 secs</span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:01:17 PM</td>
+        <td>
+          Skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="skip" test-id="2"
           author=""
           tag=""
           device="">
-          <div class="status-avatar pass-bg">
-            <i class="fa fa-check text-white"></i>
+          <div class="status-avatar skip-bg">
+            <i class="fa fa-long-arrow-right text-white"></i>
           </div>
           <div class="test-detail">
             <span class="meta text-white badge badge-sm"></span>
-            <p class="name">API Post Test</p>
-            <p class="text-sm"><span>15:27:22 PM</span> / <span>2.379 secs</span></p>
+            <p class="name">search-onesearch-chrome</p>
+            <p class="text-sm"><span>16:01:17 PM</span> / <span>0 secs</span></p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
 <div class='float-right'><span class='badge badge-default'>#test-id=2</span></div>
-<h5 class="test-status text-pass">API Post Test</h5>
-<span class='badge badge-success'>04.22.2021 15:27:22</span>
-<span class='badge badge-danger'>04.22.2021 15:27:25</span>
-<span class='badge badge-default'>2.379 secs</span>
+<h5 class="test-status text-skip">search-onesearch-chrome</h5>
+<span class='badge badge-success'>04.23.2021 16:01:17</span>
+<span class='badge badge-danger'>04.23.2021 16:01:17</span>
+<span class='badge badge-default'>0 secs</span>
 </div>
 </div>
 </div><div class="detail-body mt-4">
@@ -127,45 +141,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:27:23 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:01:17 PM</td>
         <td>
-          Adding the payload data
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:27:24 PM</td>
-        <td>
-           performing Post method
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:27:24 PM</td>
-        <td>
-          Performing assertion
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:27:24 PM</td>
-        <td>
-          performed body assertion
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:27:25 PM</td>
-        <td>
-          Getting the podcast with id number3141672a2
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:27:25 PM</td>
-        <td>
-          API test pass
+          Skipped
         </td>
       </tr>
   </tbody>
@@ -173,27 +152,27 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="skip" test-id="3"
           author=""
           tag=""
           device="">
-          <div class="status-avatar pass-bg">
-            <i class="fa fa-check text-white"></i>
+          <div class="status-avatar skip-bg">
+            <i class="fa fa-long-arrow-right text-white"></i>
           </div>
           <div class="test-detail">
             <span class="meta text-white badge badge-sm"></span>
-            <p class="name">UI Test</p>
-            <p class="text-sm"><span>15:27:22 PM</span> / <span>2.524 secs</span></p>
+            <p class="name">search-onesearch-ff</p>
+            <p class="text-sm"><span>16:01:21 PM</span> / <span>0 secs</span></p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
 <div class='float-right'><span class='badge badge-default'>#test-id=3</span></div>
-<h5 class="test-status text-pass">UI Test</h5>
-<span class='badge badge-success'>04.22.2021 15:27:22</span>
-<span class='badge badge-danger'>04.22.2021 15:27:25</span>
-<span class='badge badge-default'>2.524 secs</span>
+<h5 class="test-status text-skip">search-onesearch-ff</h5>
+<span class='badge badge-success'>04.23.2021 16:01:21</span>
+<span class='badge badge-danger'>04.23.2021 16:01:21</span>
+<span class='badge badge-default'>0 secs</span>
 </div>
 </div>
 </div><div class="detail-body mt-4">
@@ -201,55 +180,16 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:27:24 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:01:21 PM</td>
         <td>
-          opening webpage
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:27:24 PM</td>
-        <td>
-          Entered text in the search bar
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:27:25 PM</td>
-        <td>
-          performed search
+          Skipped
         </td>
       </tr>
   </tbody>
 </table>
 </div>
           </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author=""
-          tag=""
-          device="">
-          <div class="status-avatar pass-bg">
-            <i class="fa fa-check text-white"></i>
-          </div>
-          <div class="test-detail">
-            <span class="meta text-white badge badge-sm"></span>
-            <p class="name">UI Test</p>
-            <p class="text-sm"><span>15:27:22 PM</span> / <span>0 secs</span></p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<div class='float-right'><span class='badge badge-default'>#test-id=4</span></div>
-<h5 class="test-status text-pass">UI Test</h5>
-<span class='badge badge-success'>04.22.2021 15:27:22</span>
-<span class='badge badge-danger'>04.22.2021 15:27:22</span>
-<span class='badge badge-default'>0 secs</span>
-</div>
-</div>
-</div>          </div>
         </li>
       </ul>
     </div>
@@ -265,19 +205,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 22, 2021 03:27:20 PM</h3>
+<h3>Apr 23, 2021 04:01:15 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 22, 2021 03:27:25 PM</h3>
+<h3>Apr 23, 2021 04:01:23 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>4</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -299,13 +239,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>4</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
 <small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<b>3</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -322,10 +262,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='11%'><b>1</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>8</b> others
+<b data-tooltip='%'>3</b> others
 </small>
 </div>
 </div>
@@ -347,6 +287,10 @@
 <td>Tester</td>
 <td>Yeshwanth</td>
 </tr>
+<tr>
+<td>Tester</td>
+<td>Yeshwanth</td>
+</tr>
 </tbody>
 </table></div>
 </div>
@@ -356,10 +300,10 @@
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 4,
+passParent: 0,
 failParent: 0,
 warningParent: 0,
-skipParent: 0,
+skipParent: 3,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -373,11 +317,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 1,
+passEvents: 0,
 failEvents: 0,
 warningEvents: 0,
-skipEvents: 0,
-infoEvents: 8
+skipEvents: 3,
+infoEvents: 0
 };
 </script>        </div>
       </div>
