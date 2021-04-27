@@ -2,6 +2,7 @@ package stepDefinations;
 
 import Report.ReportConfig;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -42,8 +43,8 @@ public class stepDefinations extends  Utils{
     public stepDefinations() throws IOException {
     }
 
-//    ExtentTest test = ReportConfig.extent.createTest("API Post Test");
-//    ExtentTest test1 = ReportConfig.extent.createTest("UI Test");
+    //ExtentTest test = ReportConfig.extent.createTest("API Post Test");
+    //ExtentTest test1 = ReportConfig.extent.createTest("UI Test");
 
 
 
@@ -51,13 +52,12 @@ public class stepDefinations extends  Utils{
     @Given("Add  podcast with {string} {string} {int}")
     public void add_podcast(String id,String image,int listen_score) throws IOException {
         res = given().spec(requestSpecification()).body(pay_load);
-//        test.info("Adding the payload data");
-
-
-
+       // test.info("Adding the payload data");
 
 
     }
+
+
 
 @When("Use {string} method to {string}")
 public void use_method_to(String method, String resource) {
@@ -66,25 +66,28 @@ public void use_method_to(String method, String resource) {
 
     if(method.equalsIgnoreCase("POST")) {
         response = res.when().post(Ar.getResource());
-//        test.info(" performing Post method");
+       // test.log(Status.PASS," performing Post method");
 
     }
     else if(method.equalsIgnoreCase("GET"))
         response =res.when().get(Ar.getResource());
+
 
 }
     @Then("assert the data with status code {int}")
     public void assert_the_data(Integer status) {
         // Write code here that turns the phrase above into concrete actions
         assertEquals(response.getStatusCode(),200);
-//        test.info("Performing assertion");
+       //test.log(Status.PASS,"Status code assertion");
+
+
     }
 
     @Then("assert {string} in response body is {string}")
     public void assert_in_response_body_is(String keyValue, String expectedvalue) {
 
         assertEquals(getJsonPath(response, keyValue),expectedvalue);
-//        test.info("performed body assertion");
+        //test.info("performed body assertion");
 
     }
 
@@ -92,8 +95,7 @@ public void use_method_to(String method, String resource) {
     public void use_method_to_display_the_podacst(String id) {
         APIResources Ar =  APIResources.valueOf("GETpodcast");
         response =given().queryParam("id",id).spec(req).when().get(Ar.getResource());
-//        test.info("Getting the podcast with id number"+id);
-//        test.pass("API test pass");
+        //test.info("Getting the podcast with id number"+id);
 
 
     }
@@ -102,7 +104,7 @@ public void use_method_to(String method, String resource) {
     public void open_url() {
 
         sp.openpage("https://www.onesearch.com/");
-//        test1.info("opening webpage");
+       // test1.log(Status.INFO,"opening webpage");
     }
 
 

@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-16T06:35:33.949Z",
+        "line": 2,
+        "name": "Add the podcast",
+        "description": "",
+        "id": "validating-listen-api;add-the-podcast",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1189000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Add  podcast",
+            "match": {
+              "location": "stepDefinations.stepDefinations.add_podcast()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1837000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Use \"post\" method to \"ADDpodcast\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"post\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"ADDpodcast\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinations.stepDefinations.use_method_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "assert the data with status code 100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinations.stepDefinations.assert_the_data(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 198000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "use Get method to display the podacst",
+            "match": {
+              "location": "stepDefinations.stepDefinations.use_method_to_display_the_podacst()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating Listen API",
+    "description": "",
+    "id": "validating-listen-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Apitempltae.feature",
+    "tags": []
+  }
+]

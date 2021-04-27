@@ -97,14 +97,6 @@ public class ExcelUtils {
     }
 
 
-    public  static  void main(String[] args) throws IOException {
-
-//        ArrayList<String> d=getData("iclui","Sheet1" );
-//        System.out.println(d);
-
-
-
-    }
 
 
 

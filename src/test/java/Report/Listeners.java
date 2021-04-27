@@ -14,13 +14,12 @@ public class Listeners implements ITestListener {
     ExtentTest test;
 
 
-
     @Override
     public void onTestStart(ITestResult result) {
 //        test = extent.createTest(result.getMethod().getMethodName());//dynamically get the test name at the start of the test
 //        extentTest.set(test);
 //        test.assignCategory(result.getTestClass().getXmlTest().getName());
-        ReportConfig.testngtest(result);
+
 
     }
 
@@ -62,6 +61,7 @@ public class Listeners implements ITestListener {
     public void onFinish(ITestContext context) {
 
      ReportConfig.extent.flush();
+
 
 
 

@@ -30,8 +30,6 @@ public class Hooks {
 
 
         ReportConfig.newTest(scenario);
-
-
         ReportConfig.extent.flush();
 
     }

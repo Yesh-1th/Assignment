@@ -23,11 +23,8 @@ public class searchTesting extends baseTest {
 
 
     {
-//       ExtentTest test= ReportConfig.extent.createTest(result.getMethod().getMethodName() );
-//       test.assignCategory(result.getTestClass().getXmlTest().getName());
-
-
-
+        //ExtentTest test= ReportConfig.extent.createTest(result.getMethod().getMethodName() );
+       // test.assignCategory(result.getTestClass().getXmlTest().getName());
 
         WebDriver drive = give();
         searchPage sp= new searchPage(drive);

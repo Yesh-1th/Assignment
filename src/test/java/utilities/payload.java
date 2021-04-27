@@ -15,10 +15,10 @@ public class payload {
         ExcelUtils et = new ExcelUtils();
        ArrayList paydata = et.getData("key","Sheet1");
         String[] pd = (String[]) paydata.toArray(new String[0]);
-        System.out.println(paydata);
+        //System.out.println(paydata);
 
         int len = pd.length;
-        System.out.println(len);
+       // System.out.println(len);
         int i=0;
 
 
