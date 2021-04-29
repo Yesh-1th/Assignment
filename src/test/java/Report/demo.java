@@ -21,17 +21,23 @@ import io.cucumber.plugin.event.TestStepStarted;
 import io.cucumber.plugin.event.HookTestStep;
 import java.util.HashMap;
 import java.util.Map;
+
+
+
 public class demo implements EventListener {
     private ExtentSparkReporter spark;
     private ExtentReports extent;
     Map<String, ExtentTest> feature = new HashMap<String, ExtentTest>();
     ExtentTest scenario;
     ExtentTest step;
+
     public demo() {
     };
+
+
     @Override
     public void setEventPublisher(EventPublisher publisher) {
-// TODO Auto-generated method stub
+
         /*
          * :: is method reference , so this::collecTag means collectTags method in
          * 'this' instance. Here we says runStarted method accepts or listens to
@@ -39,7 +45,6 @@ public class demo implements EventListener {
          */
         publisher.registerHandlerFor(TestRunStarted.class, this::runStarted);
         publisher.registerHandlerFor(TestRunFinished.class, this::runFinished);
-        publisher.registerHandlerFor(TestSourceRead.class, this::featureRead);
         publisher.registerHandlerFor(TestCaseStarted.class, this::ScenarioStarted);
         publisher.registerHandlerFor(TestStepStarted.class, this::stepStarted);
         publisher.registerHandlerFor(TestStepFinished.class, this::stepFinished);
@@ -49,33 +54,28 @@ public class demo implements EventListener {
      * corresponding register shows error as it doesn't have a listner method that
      * accepts the type specified in TestRunStarted.class
      */
-// Here we create the reporter
+
+
+    // Here we create the reporter
     private void runStarted(TestRunStarted event) {
         spark = new ExtentSparkReporter("./ExtentReportResults.html");
         extent = new ExtentReports();
         spark.config().setTheme(Theme.DARK);
 // Create extent report instance with spark reporter
         extent.attachReporter(spark);
-    };
+        spark.config().setReportName("Automation Results");
+        spark.config().setDocumentTitle("Test results");
+        extent.setSystemInfo("Tester", "Yeshwanth");       };
     // TestRunFinished event is triggered when all feature file executions are
 // completed
     private void runFinished(TestRunFinished event) {
         extent.flush();
     };
-    // This event is triggered when feature file is read
-// here we create the feature node
-    private void featureRead(TestSourceRead event) {
-        String featureSource = event.getUri().toString();
-        String featureName = featureSource.split(".*/")[1];
-        if (feature.get(featureSource) == null) {
-            feature.putIfAbsent(featureSource, extent.createTest(featureName));
-        }
-    };
-    // This event is triggered when Test Case is started
-// here we create the scenario node
+
     private void ScenarioStarted(TestCaseStarted event) {
         String featureName = event.getTestCase().getUri().toString();
-        scenario = feature.get(featureName).createNode(event.getTestCase().getName());
+        //////// scenario = feature.get(featureName).createNode(event.getTestCase().getName());
+        scenario = extent.createTest(event.getTestCase().getName());
     };
     // step started event
 // here we creates the test node
@@ -105,7 +105,7 @@ public class demo implements EventListener {
         {
             step.log(Status.SKIP, "This step was skipped ");
         } else {
-            step.log(Status.FAIL, "This failed");
+            step.log(Status.FAIL, "This step is failed");
         }
     };
 }

@@ -3,46 +3,25 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-26T06:48:37.018Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinations.Hooks.init()"
-            }
-          }
-        ],
+        "start_timestamp": "2021-04-29T04:09:08.201Z",
         "line": 12,
         "name": "API test",
         "description": "",
         "id": "validating-listen-api;api-test;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 17000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinations.Hooks.close(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 7537000000,
+              "duration": 1131000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "Add  podcast with \"3141672a2\" \"new\" 73",
+            "name": "Add  podcast with \"123fasrs5\" \"new\" 73",
             "match": {
               "arguments": [
                 {
-                  "val": "\"3141672a2\"",
+                  "val": "\"123fasrs5\"",
                   "offset": 18
                 },
                 {
@@ -60,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 1806000000,
+              "duration": 1279000000,
               "status": "passed"
             },
             "line": 5,
@@ -82,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 6,
@@ -100,11 +79,11 @@
           },
           {
             "result": {
-              "duration": 901000000,
+              "duration": 604000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "assert \"status\" in response body is \"in review\"",
+            "name": "assert \"status\" in response body is \"found\"",
             "match": {
               "arguments": [
                 {
@@ -112,7 +91,7 @@
                   "offset": 7
                 },
                 {
-                  "val": "\"in review\"",
+                  "val": "\"found\"",
                   "offset": 36
                 }
               ],
@@ -122,15 +101,15 @@
           },
           {
             "result": {
-              "duration": 202000000,
+              "duration": 170000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "use Get method to display the podacst \"3141672a2\"",
+            "name": "use Get method to display the podacst \"123fasrs5\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"3141672a2\"",
+                  "val": "\"123fasrs5\"",
                   "offset": 38
                 }
               ],
@@ -141,11 +120,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-04-26T06:48:37.010Z",
+        "start_timestamp": "2021-04-29T04:09:08.201Z",
         "before": [
           {
             "result": {
-              "duration": 4000000,
+              "duration": 2353000000,
               "status": "passed"
             },
             "match": {
@@ -153,14 +132,14 @@
             }
           }
         ],
-        "line": 14,
+        "line": 24,
         "name": "UI test",
         "description": "",
-        "id": "validating-listen-api;ui-test",
+        "id": "validating-listen-api;ui-test;;2",
         "after": [
           {
             "result": {
-              "duration": 683000000,
+              "duration": 270000000,
               "status": "passed"
             },
             "match": {
@@ -169,38 +148,50 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 5895000000,
+              "duration": 1118000000,
               "status": "passed"
             },
-            "line": 15,
-            "name": "open Url",
+            "line": 17,
+            "name": "open \"https://www.onesearch.com/\"",
             "match": {
-              "location": "stepDefinations.stepDefinations.open_url()"
+              "arguments": [
+                {
+                  "val": "\"https://www.onesearch.com/\"",
+                  "offset": 5
+                }
+              ],
+              "location": "stepDefinations.stepDefinations.open(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 796000000,
+              "duration": 123000000,
               "status": "passed"
             },
-            "line": 16,
-            "name": "enter test in search bar",
+            "line": 18,
+            "name": "enter \"Ampion\" in search bar",
             "match": {
-              "location": "stepDefinations.stepDefinations.enter_test_in_search_bar()"
+              "arguments": [
+                {
+                  "val": "\"Ampion\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinations.stepDefinations.enter_in_search_bar(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 214000000,
+              "duration": 55000000,
               "status": "passed"
             },
-            "line": 17,
+            "line": 19,
             "name": "press click button to get results",
             "match": {
               "location": "stepDefinations.stepDefinations.press_click_button_to_get_results()"
@@ -209,15 +200,20 @@
           },
           {
             "result": {
-              "duration": 851000000,
+              "duration": 671000000,
               "status": "passed"
             },
-            "line": 18,
+            "line": 20,
             "name": "close browser",
             "match": {
               "location": "stepDefinations.stepDefinations.close_browser()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Ui_test"
           }
         ]
       }

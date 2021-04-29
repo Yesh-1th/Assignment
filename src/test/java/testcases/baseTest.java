@@ -14,7 +14,7 @@ public class baseTest {
 
     @Parameters({"browser" })
     @BeforeMethod(alwaysRun = true)
-    public WebDriver setUp(@Optional("chrome") String browser, ITestResult result ) {
+    public WebDriver setUp(@Optional("chrome") String browser) {
 
 
         browser br = new browser(browser);

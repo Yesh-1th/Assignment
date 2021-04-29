@@ -3,25 +3,31 @@ package testcases;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobjects.searchPage;
 
+import java.io.IOException;
+
+import static utilities.Utils.getGlobalValue;
 
 
 public class searchTest extends baseTest {
 
 
     WebDriver drive;
-    Logger log;
+    String search_Text = "Ampion";
+
     @Test
-    public void search()
-    {
+    public void search() throws IOException {
 
         drive = give();
-        log = givelog();
-        searchPage sp= new searchPage(drive,log);
-        sp.openpage("https://www.onesearch.com/");
-        sp.performSearch("Ampion");
+        searchPage sp= new searchPage(drive);
+        sp.openpage(getGlobalValue("Url"));
+
+
+
+        sp.performSearch(search_Text);
 
 
 

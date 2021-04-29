@@ -11,41 +11,52 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "image": "new",
+    "image": "Image",
     "thumbnail": "white",
-    "listen_score_global_rank": "9",
-    "listen_score": "78",
+    "listen_score_global_rank": "99",
+    "listen_score": "90",
     "publisher": "dummy",
-    "id": "5aghajuy5",
-    "title": "nonw",
+    "id": "123456eqw",
+    "title": "TITLE",
     "listennotes_url": "none"
 }
 HTTP/1.1 200 OK
-Date: Mon, 26 Apr 2021 06:48:46 GMT
+Date: Thu, 29 Apr 2021 04:09:10 GMT
 Content-Type: application/json
-Content-Length: 22
+Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d32ceec7af603daabe4d2090f685fc7791619419726; expires=Wed, 26-May-21 06:48:46 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
+Set-Cookie: __cfduid=d5a671df9e168ce9698b7402e93e6e8a41619669350; expires=Sat, 29-May-21 04:09:10 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
 x-listenapi-freequota: 2500
 x-listenapi-latency-seconds: 0.06106686592102051
 x-listenapi-nextbillingdate: 2021-02-14T18:53:16.385542+00:00
 x-listenapi-plan: FREE
 x-listenapi-usage: 1024
-cf-request-id: 09ae89199e000017ceb49e9000000001
+cf-request-id: 09bd6a10770000df9d8cb1b000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 645dde08f89217ce-MEL
+CF-RAY: 6475ac60b865df9d-MEL
+Content-Encoding: gzip
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
-    "status": "in review"
+    "status": "found",
+    "podcast": {
+        "id": "bc9546c04f7445e48d611112ec6438ca",
+        "image": "https://cdn-images-1.listennotes.com/podcasts/committed-iheartradio-OLW0RiJrQwX-Lvh5Xq29dtK.1400x1400.jpg",
+        "title": "Committed",
+        "publisher": "iHeartRadio",
+        "thumbnail": "https://cdn-images-1.listennotes.com/podcasts/committed-iheartradio-NIrAHbJRduy-Lvh5Xq29dtK.300x300.jpg",
+        "listen_score": 63,
+        "listennotes_url": "https://www.listennotes.com/c/bc9546c04f7445e48d611112ec6438ca/",
+        "listen_score_global_rank": "0.1%"
+    }
 }
 Request method:	GET
-Request URI:	https://listen-api-test.listennotes.com/api/v2/podcasts/?id=3141672a2
+Request URI:	https://listen-api-test.listennotes.com/api/v2/podcasts/?id=123fasrs5
 Proxy:			<none>
 Request params:	<none>
-Query params:	id=3141672a2
+Query params:	id=123fasrs5
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -54,21 +65,21 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Mon, 26 Apr 2021 06:48:47 GMT
+Date: Thu, 29 Apr 2021 04:09:11 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d2c7d447a62ae59b732dbf58614a29a341619419727; expires=Wed, 26-May-21 06:48:47 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
+Set-Cookie: __cfduid=de441fb522dd25b0d5a330429209211751619669351; expires=Sat, 29-May-21 04:09:11 GMT; path=/; domain=.listennotes.com; HttpOnly; SameSite=Lax; Secure
 x-listenapi-freequota: 2500
 x-listenapi-latency-seconds: 0.06106686592102051
 x-listenapi-nextbillingdate: 2021-02-14T18:53:16.385542+00:00
 x-listenapi-plan: FREE
 x-listenapi-usage: 1024
-cf-request-id: 09ae891e500000dfa1e1118000000001
+cf-request-id: 09bd6a13af0000377646b48000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 645dde107e98dfa1-MEL
+CF-RAY: 6475ac65edba3776-MEL
 Content-Encoding: gzip
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 

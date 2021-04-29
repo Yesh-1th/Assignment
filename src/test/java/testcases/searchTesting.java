@@ -23,17 +23,12 @@ public class searchTesting extends baseTest {
 
 
     {
-        //ExtentTest test= ReportConfig.extent.createTest(result.getMethod().getMethodName() );
-       // test.assignCategory(result.getTestClass().getXmlTest().getName());
 
         WebDriver drive = give();
         searchPage sp= new searchPage(drive);
-
         sp.openpage(url);
-
         sp.performSearch(text);
         sp.click_search();
-        //ReportConfig.extent.createTest("UI Test").log(Status.PASS,"the test has passed");
 
 
 
